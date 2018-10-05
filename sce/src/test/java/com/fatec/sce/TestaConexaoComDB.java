@@ -70,8 +70,8 @@ public class TestaConexaoComDB {
 	}
 	
 	/**
-	 * Objetivo - verificar o comportamento do sistema em conexao invalida com o DB 
-	 * Pré-condição - a senha cadastrada é "aluno"
+	 * Objetivo - verificar o comportamento do sistema em com driver invalido
+	 * Pré-condição 
 	 */
 	@Test
 	public void quandoConectaComDriverInvalido() {
