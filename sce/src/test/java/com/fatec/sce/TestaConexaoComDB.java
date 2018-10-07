@@ -38,8 +38,7 @@ public class TestaConexaoComDB {
 		} catch (Exception e) {
 			// verificacao
 			System.out.println(e.getMessage());
-			assertEquals(e.getMessage(),
-					"java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)");
+			assertEquals(e.getMessage(), "java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)");
 		}
 	}
 	
@@ -64,8 +63,7 @@ public class TestaConexaoComDB {
 		} catch (Exception e) {
 			// verificacao
 			System.out.println(e.getMessage());
-			assertEquals(e.getMessage(),
-					"java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)");
+			assertEquals(e.getMessage(), "java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)");
 		}
 	}
 	
@@ -77,7 +75,7 @@ public class TestaConexaoComDB {
 	public void quandoConectaComDriverInvalido() {
 		// cenario
 		String url = "jdbc:mysql://localhost:3306/biblioteca";
-		String driver = "com.mysql.jdbc.Driver";
+		String driver = "";
 		String usuario = "root";
 		String senha = ""; //senha errada
 		FabricaDeConexoes fabricaDeConexoes = null;
@@ -90,8 +88,7 @@ public class TestaConexaoComDB {
 		} catch (Exception e) {
 			// verificacao
 			System.out.println(e.getMessage());
-			assertEquals(e.getMessage(),
-					"java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)");
+			assertEquals(e.getMessage(), "java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)");
 		}
 	}	
 } 
